@@ -1,4 +1,7 @@
 from fastapi import FastAPI
+import logging
+
+logging.basicConfig(filename='log/logger.log')
 
 app = FastAPI()
 
