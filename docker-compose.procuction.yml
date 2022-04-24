@@ -8,3 +8,8 @@ services:
       - '3001:8080'
     volumes:
       - ./app:/app
+  nginx:
+    container_name: line_bot_nginx
+    build: docker/nginx/
+    ports:
+      - '3011:80'
