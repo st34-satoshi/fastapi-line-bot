@@ -1,7 +1,7 @@
 version: '3.7'
 
 services:
-  web:
+  app:
     container_name: line_bot
     build: docker/app/
     ports:
