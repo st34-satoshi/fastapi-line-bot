@@ -2,7 +2,7 @@ from typing import Optional
 from fastapi import FastAPI, Header, Request
 import logging
 
-logging.basicConfig(filename='log/logger.log')
+logging.basicConfig(filename='log/logger.log', encoding='utf-8', level=logging.INFO)
 
 app = FastAPI()
 
