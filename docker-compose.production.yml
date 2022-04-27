@@ -1,0 +1,13 @@
+version: '3.7'
+
+services:
+  app:
+    container_name: line_bot
+    build: docker/app/
+    volumes:
+      - ./app:/app
+  nginx:
+    container_name: line_bot_nginx
+    build: docker/nginx/
+    volumes:
+      - ./run/:/var/run/

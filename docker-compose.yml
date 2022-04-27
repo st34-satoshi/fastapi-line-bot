@@ -1,0 +1,10 @@
+version: '3.7'
+
+services:
+  web:
+    container_name: line_bot
+    build: docker/app/
+    ports:
+      - '3001:8080'
+    volumes:
+      - ./app:/app
